@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LerVetor {
@@ -12,9 +13,18 @@ public class LerVetor {
             System.out.printf("Entre com o numero %d:",(i+1));
             num[i] = sc.nextInt();
         }
+        System.out.println("***Vetor atual ***");
         //Exibir Vetor
         for (int n : num) {
-            System.out.println(n);
+            System.out.print(n + " ");
+        }
+
+        //Ordenar Vetor - complexidade de algoritmo
+        Arrays.sort(num);
+
+        System.out.println("***Array Ordenado ***");
+        for (int i : num){
+            System.out.print(i + " ");
         }
         sc.close();
     }
